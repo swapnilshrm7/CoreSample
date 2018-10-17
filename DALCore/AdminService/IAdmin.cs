@@ -4,7 +4,8 @@ using System.Text;
 
 namespace AdminService
 {
-    interface IAdmin
+    public interface IAdmin
     {
+        bool UserValidation(string UserId, string Password);
     }
 }

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Core.Contracts;
 using VisitorService;
 using GuardService;
+using AdminService;
 
 namespace DALCore
 {
@@ -31,6 +32,7 @@ namespace DALCore
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IVisitor, VisitorManager>();
             services.AddTransient<IGuard, GuardManager>();
+            services.AddTransient<IAdmin, AdminManager>();
             //DI 
         }
 

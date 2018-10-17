@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "39d95f60771cdd3e652427e737f8e9f5fd3e5c67"
+    "signature": "f87305bca08bc04d7a43b9051adeafa3c132a9ea"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "DALCore/1.0.0": {
         "dependencies": {
+          "AdminService": "1.0.0",
           "Core.Contracts": "1.0.0",
           "GuardService": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
@@ -52,6 +53,17 @@
         },
         "compile": {
           "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "jQuery/1.4.1": {},
+      "jQuery.Validation/1.8.0": {
+        "dependencies": {
+          "jQuery": "1.4.1"
+        }
+      },
+      "jQuery.Validation.Unobtrusive/2.0.20710": {
+        "dependencies": {
+          "Microsoft.jQuery.Unobtrusive.Validation": "2.0.20710"
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -186,6 +198,11 @@
         },
         "compile": {
           "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        }
+      },
+      "Microsoft.jQuery.Unobtrusive.Validation/2.0.20710": {
+        "dependencies": {
+          "jQuery.Validation": "1.8.0"
         }
       },
       "Microsoft.NETCore.App/2.1.0": {
@@ -703,6 +720,38 @@
           "System.Reflection.Extensions": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "Twilio/5.20.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.2.0",
+          "Microsoft.IdentityModel.Tokens": "5.2.0",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Collections.Specialized": "4.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.2.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Twilio.dll": {
+            "assemblyVersion": "5.20.1.0",
+            "fileVersion": "5.20.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Twilio.dll": {}
+        }
+      },
+      "AdminService/1.0.0": {
+        "dependencies": {
+          "Core.Contracts": "1.0.0",
+          "Twilio": "5.20.1",
+          "jQuery.Validation.Unobtrusive": "2.0.20710"
+        },
+        "runtime": {
+          "AdminService.dll": {}
+        },
+        "compile": {
+          "AdminService.dll": {}
         }
       },
       "Core.Contracts/1.0.0": {
@@ -3588,6 +3637,27 @@
       "path": "entityframework/5.0.0",
       "hashPath": "entityframework.5.0.0.nupkg.sha512"
     },
+    "jQuery/1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EVFPF5vgwzw0awJ+bDs2CJfaHJe1TvlJm6ekcGa97tKNUWQPDywkBKFVaZXp3ex9OpgTF1sFhxwcnkscD0mfFA==",
+      "path": "jquery/1.4.1",
+      "hashPath": "jquery.1.4.1.nupkg.sha512"
+    },
+    "jQuery.Validation/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QcuChr4FZxUfnqgf8Y8Pk7NxzprqtOxoxiK2s8ExGgXRop1btVmdVoJX08wMlpSLdLkoJiYXkqvvXwWvI7PwTA==",
+      "path": "jquery.validation/1.8.0",
+      "hashPath": "jquery.validation.1.8.0.nupkg.sha512"
+    },
+    "jQuery.Validation.Unobtrusive/2.0.20710": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fepIaobaO4w8RXGlInFprcVCPnlNx14A1BLT/mx1L2XvSwsoYgpF9x3JF6uBk3/gL5NkJPG2F0dwQMHfyafYVQ==",
+      "path": "jquery.validation.unobtrusive/2.0.20710",
+      "hashPath": "jquery.validation.unobtrusive.2.0.20710.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -3657,6 +3727,13 @@
       "sha512": "sha512-G0soUii72VLtx3lOFXFaKIJ190hSZNnjkNvIxejaZdQFX3JTgXMB6C81KFinIkZXrt4wVdmu0xmmafB4sD7v6w==",
       "path": "microsoft.entityframeworkcore.tools.dotnet/2.0.3",
       "hashPath": "microsoft.entityframeworkcore.tools.dotnet.2.0.3.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Validation/2.0.20710": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eg1ifL4qu8QPRUButvce28WjUiKzcGA5JUjrSm2ZDM2eArQ/CUY2OYjsxvWtH5ud8FDUxo1eMhnzbZr9zLaNjQ==",
+      "path": "microsoft.jquery.unobtrusive.validation/2.0.20710",
+      "hashPath": "microsoft.jquery.unobtrusive.validation.2.0.20710.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",
@@ -3860,6 +3937,18 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+    },
+    "Twilio/5.20.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uoTKwLVwS2TVSMcDxe+zbjXg9DDppCPclA0cYBgTptHNDahWYoM1jtj5d2LTiGHdrLcfjwM32R81WPwztZFh3g==",
+      "path": "twilio/5.20.1",
+      "hashPath": "twilio.5.20.1.nupkg.sha512"
+    },
+    "AdminService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Core.Contracts/1.0.0": {
       "type": "project",

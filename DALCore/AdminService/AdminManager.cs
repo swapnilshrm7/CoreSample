@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace AdminService
 {
-    public class AdminManager
+    public class AdminManager : IAdmin
     {
         public bool UserValidation(string UserId, string Password)
         {

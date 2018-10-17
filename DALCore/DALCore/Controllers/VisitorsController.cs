@@ -19,8 +19,7 @@ namespace DALCore.Controllers
         public VisitorsController(IVisitor _visitor)
         {
             visitor = _visitor;
-        }
-
+        } 
         [HttpGet]
         public List<VisitorsData> GetVisitorsFromLog()
         {

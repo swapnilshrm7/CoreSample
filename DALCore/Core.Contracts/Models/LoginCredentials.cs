@@ -9,5 +9,6 @@ namespace DALCore.Models
         public string UserId { get; set; }
         public string Password { get; set; }
         public string Category { get; set; }
+        public string ContactNo { get; set; }
     }
 }
