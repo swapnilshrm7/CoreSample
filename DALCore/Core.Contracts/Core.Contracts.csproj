@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Models\Employees.cs" />
+    <Compile Include="Models\Guard.cs" />
+    <Compile Include="Models\GuardData.cs" />
+    <Compile Include="Models\GuardLogs.cs" />
+    <Compile Include="Models\LoginCredentials.cs" />
+    <Compile Include="Models\Visitors.cs" />
+    <Compile Include="Models\VisitorsData.cs" />
+    <Compile Include="Models\VisitorsDatabaseContext.cs" />
+    <Compile Include="Models\VisitorsLogs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+  </ItemGroup>
+
+</Project>
